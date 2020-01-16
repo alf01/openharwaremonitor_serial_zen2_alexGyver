@@ -81,7 +81,7 @@ namespace OpenHardwareMonitor.Utilities
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка отправки данных в COM-порт:\r\n\r\n" + ex.Message);
+                //MessageBox.Show("Ошибка отправки данных в COM-порт:\r\n\r\n" + ex.Message);
 
                 try { serial.Close(); }
                 catch { }
