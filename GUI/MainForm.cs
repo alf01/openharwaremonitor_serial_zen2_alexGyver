@@ -615,7 +615,7 @@ namespace OpenHardwareMonitor.GUI
             Close();
         }
 
-        private float MaxTemp(Computer computer, HardwareType type)
+        private float MaxTemp(Computer computer, HardwareType type, string Name = null)
         {
             var gpus = computer.Hardware.Where(x => x.HardwareType == type).ToArray();
 
@@ -624,22 +624,39 @@ namespace OpenHardwareMonitor.GUI
                 float t = 0;
                 foreach (var gpu in gpus)
                 {
-                    var temps = gpu.Sensors.Where(x => x.SensorType == SensorType.Temperature).ToArray();
-                    if (temps.Any())
+                    if (!string.IsNullOrEmpty(Name))
                     {
-                        var temp = temps.Max(x => x.Value.Value);
-                        t = Math.Max(temp, t);
-                    }
+                        var temps = gpu.Sensors.Where(x => x.Name == Name && x.SensorType == SensorType.Temperature).ToArray();
 
-                    foreach (var sh in gpu.SubHardware)
+                        if (temps.Count() != 0)
+                        {
+                            t = temps.Average(temp => temp.Value.Value);
+                        }
+
+                    }
+                    else
                     {
-                        temps = sh.Sensors.Where(x => x.SensorType == SensorType.Temperature).ToArray();
+
+                        var temps = gpu.Sensors.Where(x => x.SensorType == SensorType.Temperature).ToArray();
+
                         if (temps.Any())
                         {
                             var temp = temps.Max(x => x.Value.Value);
                             t = Math.Max(temp, t);
                         }
+
+                        foreach (var sh in gpu.SubHardware)
+                        {
+                            temps = sh.Sensors.Where(x => x.SensorType == SensorType.Temperature).ToArray();
+                            if (temps.Any())
+                            {
+                                var temp = temps.Max(x => x.Value.Value);
+                                t = Math.Max(temp, t);
+                            }
+                        }
                     }
+
+                   
                 }
 
                 return t;
@@ -773,7 +790,16 @@ namespace OpenHardwareMonitor.GUI
                     gpuMaxUsage,
                     (int)UsageInPercent(computer, HardwareType.RAM, "Memory"),
                     gpuMaxMemory
+
+
+                    
                 };
+
+                for (int i = 1; i < 17; i++)
+                {
+                    data.Add((int)MaxTemp(computer, HardwareType.CPU, $"CPU Core #{i}"));
+                    data.Add((int)UsageInPercent(computer, HardwareType.CPU, $"CPU Core #{i}"));
+                }
 
                 if (!hardwareOnly)
                 {
