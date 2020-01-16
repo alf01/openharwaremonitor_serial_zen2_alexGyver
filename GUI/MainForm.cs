@@ -309,11 +309,11 @@ namespace OpenHardwareMonitor.GUI
             {
                 if (runSerial.Value)
                 {
-                    serial.Open();
+                    timer.Enabled = true;                   
                 }
                 else
                 {
-                    serial.Close();
+                    timer.Enabled = false;                   
                 }
             };
 

@@ -64,19 +64,29 @@ namespace OpenHardwareMonitor.Utilities
         {
             if (serial.IsOpen)
             {
-                try
-                {
-                    serial.Write(data, 0, data.Length);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Ошибка отправки данных в COM-порт:\r\n\r\n" + ex.Message);
+                WriteData(data);
+            }
+            else
+            {
+                if (this.Open())
+                    WriteData(data);
+            }
+        }
 
-                    try { serial.Close(); }
-                    catch { }
+        private void WriteData(byte[] data)
+        {
+            try
+            {
+                serial.Write(data, 0, data.Length);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка отправки данных в COM-порт:\r\n\r\n" + ex.Message);
 
-                    Open();
-                }
+                try { serial.Close(); }
+                catch { }
+
+                Open();
             }
         }
     }

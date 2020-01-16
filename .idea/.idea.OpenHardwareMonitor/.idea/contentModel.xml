@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\OpenHardwareMonitorPlusRyzen" t="IncludeRecursive">
+      <e p="App.config" t="Include" />
+      <e p="Bin" t="ExcludeRecursive" />
+      <e p="Collections" t="Include">
+        <e p="IReadOnlyArray.cs" t="Include" />
+        <e p="ListSet.cs" t="Include" />
+        <e p="Pair.cs" t="Include" />
+        <e p="ReadOnlyArray.cs" t="Include" />
+        <e p="RingCollection.cs" t="Include" />
+      </e>
+      <e p="GUI" t="Include">
+        <e p="AboutBox.cs" t="Include" />
+        <e p="AboutBox.Designer.cs" t="Include" />
+        <e p="AboutBox.resx" t="Include" />
+        <e p="CrashForm.cs" t="Include" />
+        <e p="CrashForm.Designer.cs" t="Include" />
+        <e p="CrashForm.resx" t="Include" />
+        <e p="Gadget.cs" t="Include" />
+        <e p="GadgetWindow.cs" t="Include" />
+        <e p="HardwareNode.cs" t="Include" />
+        <e p="HardwareTypeImage.cs" t="Include" />
+        <e p="MainForm.cs" t="Include" />
+        <e p="MainForm.Designer.cs" t="Include" />
+        <e p="MainForm.resx" t="Include" />
+        <e p="Node.cs" t="Include" />
+        <e p="NotifyIconAdv.cs" t="Include" />
+        <e p="ParameterForm.cs" t="Include" />
+        <e p="ParameterForm.Designer.cs" t="Include" />
+        <e p="ParameterForm.resx" t="Include" />
+        <e p="PlotPanel.cs" t="Include" />
+        <e p="PortForm.cs" t="Include" />
+        <e p="PortForm.Designer.cs" t="Include" />
+        <e p="PortForm.resx" t="Include" />
+        <e p="ReportForm.cs" t="Include" />
+        <e p="ReportForm.Designer.cs" t="Include" />
+        <e p="ReportForm.resx" t="Include" />
+        <e p="SensorGadget.cs" t="Include" />
+        <e p="SensorNode.cs" t="Include" />
+        <e p="SensorNotifyIcon.cs" t="Include" />
+        <e p="SerialForm.cs" t="Include" />
+        <e p="SerialForm.Designer.cs" t="Include" />
+        <e p="SerialForm.resx" t="Include" />
+        <e p="ShowDesktop.cs" t="Include" />
+        <e p="SplitContainerAdv.cs" t="Include" />
+        <e p="StartupManager.cs" t="Include" />
+        <e p="SystemTray.cs" t="Include" />
+        <e p="TaskScheduler.cs" t="Include" />
+        <e p="TreeModel.cs" t="Include" />
+        <e p="TypeNode.cs" t="Include" />
+        <e p="UnitManager.cs" t="Include" />
+        <e p="UpdateVisitor.cs" t="Include" />
+        <e p="UserOption.cs" t="Include" />
+        <e p="UserRadioGroup.cs" t="Include" />
+      </e>
+      <e p="Hardware" t="Include">
+        <e p="ATI" t="Include">
+          <e p="ADL.cs" t="Include" />
+          <e p="ATIGPU.cs" t="Include" />
+          <e p="ATIGroup.cs" t="Include" />
+        </e>
+        <e p="Computer.cs" t="Include" />
+        <e p="Control.cs" t="Include" />
+        <e p="CPU" t="Include">
+          <e p="AMD0FCPU.cs" t="Include" />
+          <e p="AMD10CPU.cs" t="Include" />
+          <e p="AMDCPU.cs" t="Include" />
+          <e p="CPUGroup.cs" t="Include" />
+          <e p="CPUID.cs" t="Include" />
+          <e p="CPULoad.cs" t="Include" />
+          <e p="GenericCPU.cs" t="Include" />
+          <e p="IntelCPU.cs" t="Include" />
+        </e>
+        <e p="FirmwareTable.cs" t="Include" />
+        <e p="Hardware.cs" t="Include" />
+        <e p="HDD" t="Include">
+          <e p="AbstractHarddrive.cs" t="Include" />
+          <e p="DebugSmart.cs" t="Include" />
+          <e p="DriveAttributeValue.cs" t="Include" />
+          <e p="DriveThresholdValue.cs" t="Include" />
+          <e p="HarddriveGroup.cs" t="Include" />
+          <e p="HDDGeneric.cs" t="Include" />
+          <e p="ISmart.cs" t="Include" />
+          <e p="NamePrefixAttribute.cs" t="Include" />
+          <e p="RequireSmartAttribute.cs" t="Include" />
+          <e p="SmartAttribute.cs" t="Include" />
+          <e p="SmartNames.cs" t="Include" />
+          <e p="SSDIndilinx.cs" t="Include" />
+          <e p="SSDIntel.cs" t="Include" />
+          <e p="SSDMicron.cs" t="Include" />
+          <e p="SSDPlextor.cs" t="Include" />
+          <e p="SSDSamsung.cs" t="Include" />
+          <e p="SSDSandforce.cs" t="Include" />
+          <e p="WindowsSmart.cs" t="Include" />
+        </e>
+        <e p="Heatmaster" t="Include">
+          <e p="Heatmaster.cs" t="Include" />
+          <e p="HeatmasterGroup.cs" t="Include" />
+        </e>
+        <e p="HexStringArray.cs" t="Include" />
+        <e p="IComputer.cs" t="Include" />
+        <e p="IControl.cs" t="Include" />
+        <e p="Identifier.cs" t="Include" />
+        <e p="IElement.cs" t="Include" />
+        <e p="IGroup.cs" t="Include" />
+        <e p="IHardware.cs" t="Include" />
+        <e p="IOControlCode.cs" t="Include" />
+        <e p="IParameter.cs" t="Include" />
+        <e p="ISensor.cs" t="Include" />
+        <e p="ISettings.cs" t="Include" />
+        <e p="IVisitor.cs" t="Include" />
+        <e p="KernelDriver.cs" t="Include" />
+        <e p="LPC" t="Include">
+          <e p="Chip.cs" t="Include" />
+          <e p="F718XX.cs" t="Include" />
+          <e p="ISuperIO.cs" t="Include" />
+          <e p="IT87XX.cs" t="Include" />
+          <e p="LMSensors.cs" t="Include" />
+          <e p="LPCIO.cs" t="Include" />
+          <e p="LPCPort.cs" t="Include" />
+          <e p="NCT677X.cs" t="Include" />
+          <e p="W836XX.cs" t="Include" />
+        </e>
+        <e p="Mainboard" t="Include">
+          <e p="GigabyteTAMG.cs" t="Include" />
+          <e p="Identification.cs" t="Include" />
+          <e p="Mainboard.cs" t="Include" />
+          <e p="MainboardGroup.cs" t="Include" />
+          <e p="Manufacturer.cs" t="Include" />
+          <e p="Model.cs" t="Include" />
+          <e p="SuperIOHardware.cs" t="Include" />
+        </e>
+        <e p="Nvidia" t="Include">
+          <e p="NVAPI.cs" t="Include" />
+          <e p="NvidiaGPU.cs" t="Include" />
+          <e p="NvidiaGroup.cs" t="Include" />
+        </e>
+        <e p="Opcode.cs" t="Include" />
+        <e p="OperatingSystem.cs" t="Include" />
+        <e p="Parameter.cs" t="Include" />
+        <e p="PInvokeDelegateFactory.cs" t="Include" />
+        <e p="RAM" t="Include">
+          <e p="GenericRAM.cs" t="Include" />
+          <e p="RAMGroup.cs" t="Include" />
+        </e>
+        <e p="Ring0.cs" t="Include" />
+        <e p="Sensor.cs" t="Include" />
+        <e p="SensorVisitor.cs" t="Include" />
+        <e p="SMBIOS.cs" t="Include" />
+        <e p="TBalancer" t="Include">
+          <e p="FTD2XX.cs" t="Include" />
+          <e p="TBalancer.cs" t="Include" />
+          <e p="TBalancerGroup.cs" t="Include" />
+        </e>
+        <e p="ThreadAffinity.cs" t="Include" />
+        <e p="WinRing0.sys" t="Include" />
+        <e p="WinRing0x64.sys" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="OpenHardwareMonitor.csproj" t="IncludeRecursive" />
+      <e p="OpenHardwareMonitor.sln" t="IncludeFlat" />
+      <e p="OpenHardwareMonitorLib.csproj" t="IncludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="AssemblyLibInfo.cs" t="Include" />
+        <e p="AssemblyVersion.cs" t="Include" />
+        <e p="Resources.Designer.cs" t="Include" />
+        <e p="Resources.resx" t="Include" />
+      </e>
+      <e p="Properties.Designer.cs" t="Include" />
+      <e p="Properties.settings" t="Include" />
+      <e p="Resources" t="Include">
+        <e p="app.manifest" t="Include" />
+        <e p="ati.png" t="Include" />
+        <e p="barback.png" t="Include" />
+        <e p="barblue.png" t="Include" />
+        <e p="bigng.png" t="Include" />
+        <e p="chip.png" t="Include" />
+        <e p="clock.png" t="Include" />
+        <e p="computer.png" t="Include" />
+        <e p="control.png" t="Include" />
+        <e p="cpu.png" t="Include" />
+        <e p="data.png" t="Include" />
+        <e p="factor.png" t="Include" />
+        <e p="fan.png" t="Include" />
+        <e p="flow.png" t="Include" />
+        <e p="gadget.png" t="Include" />
+        <e p="gyver-logo.png" t="Include" />
+        <e p="hdd.png" t="Include" />
+        <e p="icon.ico" t="Include" />
+        <e p="level.png" t="Include" />
+        <e p="load.png" t="Include" />
+        <e p="mainboard.png" t="Include" />
+        <e p="nvidia.png" t="Include" />
+        <e p="power.png" t="Include" />
+        <e p="ram.png" t="Include" />
+        <e p="smallicon.ico" t="Include" />
+        <e p="temperature.png" t="Include" />
+        <e p="voltage.png" t="Include" />
+        <e p="Web" t="Include">
+          <e p="css" t="Include">
+            <e p="custom-theme" t="Include">
+              <e p="images" t="Include">
+                <e p="ui-bg_flat_0_aaaaaa_40x100.png" t="Include" />
+                <e p="ui-bg_glass_55_fbf9ee_1x400.png" t="Include" />
+                <e p="ui-bg_glass_65_ffffff_1x400.png" t="Include" />
+                <e p="ui-bg_glass_75_dadada_1x400.png" t="Include" />
+                <e p="ui-bg_glass_75_e6e6e6_1x400.png" t="Include" />
+                <e p="ui-bg_glass_75_ffffff_1x400.png" t="Include" />
+                <e p="ui-bg_highlight-soft_75_cccccc_1x100.png" t="Include" />
+                <e p="ui-bg_inset-soft_95_fef1ec_1x100.png" t="Include" />
+                <e p="ui-icons_222222_256x240.png" t="Include" />
+                <e p="ui-icons_2e83ff_256x240.png" t="Include" />
+                <e p="ui-icons_454545_256x240.png" t="Include" />
+                <e p="ui-icons_888888_256x240.png" t="Include" />
+                <e p="ui-icons_cd0a0a_256x240.png" t="Include" />
+              </e>
+              <e p="jquery-ui-1.8.16.custom.css" t="Include" />
+            </e>
+            <e p="jquery.treeTable.css" t="Include" />
+            <e p="ohm_web.css" t="Include" />
+          </e>
+          <e p="images" t="Include">
+            <e p="toggle-collapse-dark.png" t="Include" />
+            <e p="toggle-collapse-light.png" t="Include" />
+            <e p="toggle-expand-dark.png" t="Include" />
+            <e p="toggle-expand-light.png" t="Include" />
+            <e p="transparent.png" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+          <e p="js" t="Include">
+            <e p="jquery-1.7.2.min.js" t="Include" />
+            <e p="jquery-ui-1.8.16.custom.min.js" t="Include" />
+            <e p="jquery.tmpl.min.js" t="Include" />
+            <e p="jquery.treeTable.min.js" t="Include" />
+            <e p="knockout-2.1.0.min.js" t="Include" />
+            <e p="knockout.mapping-latest.min.js" t="Include" />
+            <e p="ohm_web.js" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Utilities" t="Include">
+        <e p="EmbeddedResources.cs" t="Include" />
+        <e p="HttpServer.cs" t="Include" />
+        <e p="IconFactory.cs" t="Include" />
+        <e p="Logger.cs" t="Include" />
+        <e p="PersistentSettings.cs" t="Include" />
+        <e p="Serial.cs" t="Include" />
+      </e>
+      <e p="WMI" t="Include">
+        <e p="Hardware.cs" t="Include" />
+        <e p="IWmiObject.cs" t="Include" />
+        <e p="Sensor.cs" t="Include" />
+        <e p="WmiProvider.cs" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\ponomarenko\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ponomarenko\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_OpenHardwareMonitor.-1208202209.00" t="ExcludeRecursive" />
+  </component>
+</project>
