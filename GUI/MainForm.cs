@@ -307,17 +307,7 @@ namespace OpenHardwareMonitor.GUI
 
             serial = new Serial();
             runSerial = new UserOption("runSerialMenuItem", false, runSerialMenuItem, settings);
-            runSerial.Changed += delegate (object sender, EventArgs e)
-            {
-                if (runSerial.Value)
-                {
-                    sendSerialData = true;                   
-                }
-                else
-                {
-                    sendSerialData = false;                   
-                }
-            };
+            runSerial.Changed += delegate (object sender, EventArgs e) { sendSerialData = runSerial.Value; };
 
             logSensors = new UserOption("logSensorsMenuItem", false, logSensorsMenuItem, settings);
 
