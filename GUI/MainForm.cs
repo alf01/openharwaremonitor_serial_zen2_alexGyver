@@ -78,6 +78,8 @@ namespace OpenHardwareMonitor.GUI
 
         private bool selectionDragging = false;
 
+        private bool sendSerialData = false;
+
         public MainForm()
         {
             InitializeComponent();
@@ -309,11 +311,11 @@ namespace OpenHardwareMonitor.GUI
             {
                 if (runSerial.Value)
                 {
-                    timer.Enabled = true;                   
+                    sendSerialData = true;                   
                 }
                 else
                 {
-                    timer.Enabled = false;                   
+                    sendSerialData = false;                   
                 }
             };
 
@@ -766,6 +768,7 @@ namespace OpenHardwareMonitor.GUI
         {
             computer.Accept(updateVisitor);
 
+            if(sendSerialData)
             {
                 var gpuMaxTemp = Math.Max(
                     (int)MaxTemp(computer, HardwareType.GpuNvidia),
